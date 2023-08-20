@@ -8,8 +8,8 @@ function IndexPage(props) {
       <Meta />
       <Navbar
         color="default"
-        logo="https://uploads.divjoy.com/logo.svg"
-        logoInverted="https://uploads.divjoy.com/logo-white.svg"
+        logo="https://storage.cloud.google.com/bucket-finjell-logo/FinJell-logos_transparent.png"
+        logoInverted="https://storage.cloud.google.com/bucket-finjell-logo/FinJell-logos_white.png"
       />
     </>
   );
