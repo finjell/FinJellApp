@@ -54,8 +54,8 @@ function App(props) {
             bgImage=""
             bgImageOpacity={1}
             copyright={`© ${new Date().getFullYear()} FinJell`}
-            logo="https://uploads.divjoy.com/logo.svg"
-            logoInverted="https://uploads.divjoy.com/logo-white.svg"
+            logo="https://storage.googleapis.com/bucket-finjell-logo/FinJell-logos_transparent.png"
+            logoInverted="https://storage.googleapis.com/bucket-finjell-logo/FinJell-logos_white.png"
             sticky={true}
           />
         </>
