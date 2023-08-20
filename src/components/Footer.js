@@ -27,7 +27,8 @@ const useStyles = makeStyles((theme) => ({
   },
   brand: {
     display: "block",
-    height: 32,
+    height: 80,
+    width: 80
   },
   social: {
     alignItems: "flex-end",
