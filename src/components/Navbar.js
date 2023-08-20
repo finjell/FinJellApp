@@ -22,6 +22,7 @@ const useStyles = makeStyles((theme) => ({
   logo: {
     //height: 28,
     height: 250,
+    width: 250,
     marginRight: theme.spacing(2),
   },
   drawerList: {
