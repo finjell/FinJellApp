@@ -1,0 +1,1751 @@
+{
+  "data": [
+    {
+      "type": "instance",
+      "subtype": "app-instance",
+      "componentId": "app",
+      "id": 4010090,
+      "isVisible": true,
+      "children": []
+    }
+  ],
+  "components": [
+    {
+      "id": "app",
+      "type": "component",
+      "subtype": "app-component",
+      "kit": "materialui",
+      "muiTheme": "{\n  // Light theme\n  light: {\n    palette: {\n      type: \"light\",\n      primary: {\n        // Use hue from colors or hex\n        main: colors.indigo[\"500\"],\n        // Uncomment to specify light/dark \t\n        // shades instead of automatically\n        // calculating from above value.\n        //light: \"#4791db\",\n        //dark: \"#115293\",\n      },\n      secondary: {\n        main: colors.pink[\"500\"],\n      },\n      background: {\n        // Background for <body> \n        // and <Section color=\"default\">\n        default: \"#fff\",\n        // Background for elevated \t\n        // components (<Card>, etc)\n        paper: \"#fff\",\n      },\n    },\n  },\n\n  // Dark theme\n  dark: {\n    palette: {\n      type: \"dark\",\n      primary: {\n        // Same as in light but we could\n        // adjust color hue if needed\n        main: colors.indigo[\"500\"],\n      },\n      secondary: {\n        main: colors.pink[\"500\"],\n      },\n      background: {\n        default: colors.grey[\"900\"],\n        paper: colors.grey[\"800\"],\n      },\n    },\n  },\n\n  // Values for both themes\n  common: {\n    typography: {\n      fontSize: 14,\n      fontFamily: '\"Roboto\", \"Helvetica\", \"Arial\", sans-serif',\n      // Uncomment to make button lowercase\n      // button: { textTransform: \"none\" },\n    },\n    breakpoints: {\n      values: {\n        xs: 0,\n        sm: 600,\n        md: 960,\n        lg: 1200,\n        xl: 1920,\n      },\n    },\n    // Override component styles\n    overrides: {\n      // Global styles\n      MuiCssBaseline: {\n        \"@global\": {\n          \"#root\": {\n            // Flex column that is height \n            // of viewport so that footer \n            // can push self to bottom by \n\t\t\t\t\t\t// with auto margin-top\n            minHeight: \"100vh\",\n            display: \"flex\",\n            flexDirection: \"column\",\n            // Prevent child elements from \t\n            // shrinking when content\n            // is taller than the screen \n            // (quirk of flex parent)\n            \"& > *\": {\n              flexShrink: 0,\n            },\n          },\n        },\n      },\n    },\n  },\n}",
+      "isVisible": true,
+      "code": "",
+      "globalStyle": "",
+      "children": [
+        {
+          "type": "instance",
+          "subtype": "page-instance",
+          "componentId": 282835,
+          "id": 9557982,
+          "isVisible": true,
+          "children": []
+        },
+        {
+          "type": "instance",
+          "componentId": 6573244,
+          "id": 1479139,
+          "attributes": "{\n  // Background\n  // default, light, primary, secondary,\n  // inherit, transparent\n\tbgColor: \"default\",\n  // normal, medium, large\n  size: \"medium\",\n  // Background image URL\n  bgImage: \"\",\n  // Background image opacity (0-1)\n  bgImageOpacity: 1,\n  // Text content\n  title: \"Your landing page title here\",\n  subtitle: \"This landing page is perfect for showing off your awesome product and driving people to sign up for a paid plan.\",\n\t// Image\n  image: \"https://uploads.divjoy.com/undraw-japan_ubgk.svg\",\n  // Button\n \tbuttonText: \"Get Started\",\n  // default, primary, secondary, inherit\n  buttonColor: \"primary\",\n  buttonPath: \"/pricing\",\n}",
+          "isVisible": true,
+          "children": [],
+          "libraryName": "HeroSection"
+        },
+        {
+          "type": "instance",
+          "componentId": 1695432,
+          "id": 1677291,
+          "attributes": "{\n\t// Background\n  // default, light, primary, secondary,\n  // inherit, transparent\n  bgColor: \"default\",\n  // normal, medium, large\n  size: \"medium\",\n  // Background image URL\n  bgImage: \"\",\n  // Background image opacity (0-1)\n  bgImageOpacity: 1,\n  // Text content\n  title: \"Features\",\n  subtitle: \"All the features you need to move faster\",\n  // Feature data is in the \"code\" section below\n}",
+          "isVisible": true,
+          "children": [],
+          "libraryName": "FeaturesSection"
+        },
+        {
+          "type": "instance",
+          "componentId": 8401615,
+          "id": 5497906,
+          "attributes": "{\n\t// Background\n  // default, light, primary, secondary,\n  // inherit, transparent\n  bgColor: \"default\",\n  // normal, medium, large\n  size: \"medium\",\n  // Background image URL\n  bgImage: \"\",\n  // Background image opacity (0-1)\n  bgImageOpacity: 1,\n  // Text content\n  title: \"Frequently Asked Questions\",\n  subtitle: \"\",\n  // FAQ data is in the \"code\" section below\n}",
+          "isVisible": true,
+          "children": [],
+          "libraryName": "FaqSection"
+        },
+        {
+          "type": "instance",
+          "componentId": 5112763,
+          "id": 783229,
+          "attributes": "{\n\t// Background\n  // default, light, primary, secondary,\n  // inherit, transparent\n  bgColor: \"default\",\n  // normal, medium, large\n  size: \"medium\",\n  // Background image URL\n  bgImage: \"\",\n  // Background image opacity (0-1)\n  bgImageOpacity: 1,\n  // Copyright text\n  copyright: `© ${new Date().getFullYear()} Company`,\n  // Logo image url\n  logo: \"https://uploads.divjoy.com/logo.svg\",\n\t// Logo image url for dark mode\n\tlogoInverted: \"https://uploads.divjoy.com/logo-white.svg\",\n  // Stick to bottom of page\n  sticky: true,\n}",
+          "isVisible": true,
+          "children": [],
+          "libraryName": "Footer"
+        }
+      ]
+    },
+    {
+      "type": "component",
+      "subtype": "external-component",
+      "name": "Button",
+      "module": {
+        "moduleName": "material-ui",
+        "modulePath": "@material-ui/core/Button",
+        "default": "Button"
+      },
+      "id": 9259061,
+      "isVisible": true,
+      "nameLibrary": "",
+      "description": "",
+      "tags": [],
+      "children": []
+    },
+    {
+      "type": "component",
+      "subtype": "external-component",
+      "name": "Box",
+      "module": {
+        "moduleName": "material-ui",
+        "modulePath": "@material-ui/core/Box",
+        "default": "Box"
+      },
+      "id": 2803465,
+      "isVisible": true,
+      "nameLibrary": "",
+      "description": "",
+      "tags": [],
+      "children": []
+    },
+    {
+      "type": "component",
+      "subtype": "external-component",
+      "name": "Container",
+      "module": {
+        "moduleName": "material-ui",
+        "modulePath": "@material-ui/core/Container",
+        "default": "Container"
+      },
+      "id": 6094171,
+      "isVisible": true,
+      "nameLibrary": "",
+      "description": "",
+      "tags": [],
+      "children": []
+    },
+    {
+      "type": "component",
+      "id": 9534547,
+      "name": "Section",
+      "code": "   const {\n    bgColor = \"default\",\n    bgImage,\n    bgImageOpacity,\n    size = \"normal\",\n    className,\n    children,\n    ...otherProps\n  } = props;\n\n  // Get MUI responsize size object based\n  // on size prop (normal, medium, large, auto)\n  const verticalPadding = {\n    normal: { xs: 6 },\n    medium: { xs: 6, sm: 10 },\n    large: { xs: 6, sm: 20 },\n    auto: 0,\n  }[size];\n",
+      "children": [
+        {
+          "type": "instance",
+          "componentId": 2803465,
+          "id": 3413529,
+          "attributes": "{\n\tcomponent: \"section\",\n  py: verticalPadding,\n  className: classes.root +\n \t\t` ${classes[`color${capitalize(bgColor)}`]}` +\n  \t(className ? ` ${className}` : \"\"),\n  ...otherProps\n}",
+          "children": [
+            {
+              "type": "if",
+              "js": "bgImage",
+              "id": 6080639,
+              "children": [
+                {
+                  "type": "instance",
+                  "componentId": 2740278,
+                  "id": 9364995,
+                  "attributes": "{\n\timage: bgImage,\n  opacity: bgImageOpacity\n}",
+                  "isVisible": true,
+                  "children": []
+                }
+              ],
+              "isVisible": true
+            },
+            {
+              "type": "children",
+              "id": 6948342,
+              "isVisible": true
+            }
+          ],
+          "subtype": "external-instance",
+          "isVisible": true
+        }
+      ],
+      "muiStyle": "{\n  root: {\n    position: \"relative\",\n    // Ensure child <Container> is above background\n    // image (if one is set with the bgImage prop).\n    \"& > .MuiContainer-root\": {\n      position: \"relative\",\n    },\n  },\n\n  // Create color classes that set background color and determine\n  // text color and dividing border automatically based on background color.\n  // Adds the keys colorDefault, colorLight, etc\n  ...[\n    [\"default\", theme.palette.background.default],\n    [\"light\", emphasize(theme.palette.background.default, 0.03)],\n    [\"primary\", theme.palette.primary.main],\n    [\"secondary\", theme.palette.secondary.main],\n  ].reduce((acc, [name, value]) => {\n    acc[`color${capitalize(name)}`] = {\n      backgroundColor: value,\n      // Ensure text is legible on background\n      color: theme.palette.getContrastText(value),\n      // Sibling selector that adds a top border if section above\n      // has the same color class.\n      // We use emphasize to compute border based on background color\n      // and make sure it's always lightly visible.\n      [`& + &`]: {\n        borderTop: `1px solid ${emphasize(value, 0.09)}`,\n      },\n    };\n    return acc;\n  }, {}),\n\n  colorInherit: {\n    color: \"inherit\",\n  },\n\n  colorTransparent: {\n    backgroundColor: \"transparent\",\n    color: \"inherit\",\n  },\n}",
+      "isVisible": true,
+      "nameLibrary": "",
+      "description": "",
+      "tags": []
+    },
+    {
+      "type": "component",
+      "id": 2740278,
+      "name": "BackgroundImage",
+      "code": "  const { image, opacity, ...otherProps } = props;\n",
+      "children": [
+        {
+          "type": "element",
+          "tagName": "div",
+          "id": 6682918,
+          "attributes": "{\n\tclassName: classes.root,\n  style: {\n    backgroundImage: `url(${image})`,\n   \topacity: opacity,\n  },\n  ...otherProps\n}",
+          "isVisible": true,
+          "image": "",
+          "name": "",
+          "classNames": [],
+          "classNameExpressions": [],
+          "style": "",
+          "children": []
+        }
+      ],
+      "muiStyle": "{\n  root: {\n    content: \"\",\n    backgroundPosition: \"center center\",\n    backgroundSize: \"cover\",\n    top: 0,\n    left: 0,\n    bottom: 0,\n    right: 0,\n    position: \"absolute\",\n    zIndex: 0,\n  },\n}",
+      "isVisible": true,
+      "nameLibrary": "",
+      "description": "",
+      "tags": []
+    },
+    {
+      "type": "component",
+      "subtype": "external-component",
+      "name": "AppBar",
+      "module": {
+        "moduleName": "material-ui",
+        "modulePath": "@material-ui/core/AppBar",
+        "default": "AppBar"
+      },
+      "id": 6924602,
+      "isVisible": true,
+      "nameLibrary": "",
+      "description": "",
+      "tags": [],
+      "children": []
+    },
+    {
+      "type": "component",
+      "subtype": "external-component",
+      "name": "Toolbar",
+      "module": {
+        "moduleName": "material-ui",
+        "modulePath": "@material-ui/core/Toolbar",
+        "default": "Toolbar"
+      },
+      "id": 5455913,
+      "isVisible": true,
+      "nameLibrary": "",
+      "description": "",
+      "tags": [],
+      "children": []
+    },
+    {
+      "type": "component",
+      "subtype": "external-component",
+      "name": "IconButton",
+      "module": {
+        "moduleName": "material-ui",
+        "modulePath": "@material-ui/core/IconButton",
+        "default": "IconButton"
+      },
+      "id": 6001480,
+      "isVisible": true,
+      "nameLibrary": "",
+      "description": "",
+      "tags": [],
+      "children": []
+    },
+    {
+      "type": "component",
+      "subtype": "external-component",
+      "name": "MenuIcon",
+      "module": {
+        "moduleName": "material-ui",
+        "modulePath": "@material-ui/icons/Menu",
+        "default": "MenuIcon"
+      },
+      "id": 7903337,
+      "isVisible": true,
+      "nameLibrary": "",
+      "description": "",
+      "tags": [],
+      "children": []
+    },
+    {
+      "type": "component",
+      "subtype": "external-component",
+      "name": "Drawer",
+      "module": {
+        "moduleName": "material-ui",
+        "modulePath": "@material-ui/core/Drawer",
+        "default": "Drawer"
+      },
+      "id": 1225687,
+      "isVisible": true,
+      "nameLibrary": "",
+      "description": "",
+      "tags": [],
+      "children": []
+    },
+    {
+      "type": "component",
+      "subtype": "external-component",
+      "name": "List",
+      "module": {
+        "moduleName": "material-ui",
+        "modulePath": "@material-ui/core/List",
+        "default": "List"
+      },
+      "id": 494811,
+      "isVisible": true,
+      "nameLibrary": "",
+      "description": "",
+      "tags": [],
+      "children": []
+    },
+    {
+      "type": "component",
+      "subtype": "external-component",
+      "name": "ListItem",
+      "module": {
+        "moduleName": "material-ui",
+        "modulePath": "@material-ui/core/ListItem",
+        "default": "ListItem"
+      },
+      "id": 174532,
+      "isVisible": true,
+      "nameLibrary": "",
+      "description": "",
+      "tags": [],
+      "children": []
+    },
+    {
+      "type": "component",
+      "subtype": "external-component",
+      "name": "ListItemText",
+      "module": {
+        "moduleName": "material-ui",
+        "modulePath": "@material-ui/core/ListItemText",
+        "default": "ListItemText"
+      },
+      "id": 6869634,
+      "isVisible": true,
+      "nameLibrary": "",
+      "description": "",
+      "tags": [],
+      "children": []
+    },
+    {
+      "type": "component",
+      "subtype": "external-component",
+      "name": "Hidden",
+      "module": {
+        "moduleName": "material-ui",
+        "modulePath": "@material-ui/core/Hidden",
+        "default": "Hidden"
+      },
+      "id": 3614119,
+      "isVisible": true,
+      "nameLibrary": "",
+      "description": "",
+      "tags": [],
+      "children": []
+    },
+    {
+      "type": "component",
+      "subtype": "external-component",
+      "name": "NightsStayIcon",
+      "module": {
+        "moduleName": "material-ui",
+        "modulePath": "@material-ui/icons/NightsStay",
+        "default": "NightsStayIcon"
+      },
+      "id": 7218909,
+      "isVisible": true,
+      "nameLibrary": "",
+      "description": "",
+      "tags": [],
+      "children": []
+    },
+    {
+      "type": "component",
+      "subtype": "external-component",
+      "name": "WbSunnyIcon",
+      "module": {
+        "moduleName": "material-ui",
+        "modulePath": "@material-ui/icons/WbSunny",
+        "default": "WbSunnyIcon"
+      },
+      "id": 5205416,
+      "isVisible": true,
+      "nameLibrary": "",
+      "description": "",
+      "tags": [],
+      "children": []
+    },
+    {
+      "type": "component",
+      "name": "Navbar",
+      "code": "\tconst darkMode = useDarkMode();\n  const [drawerOpen, setDrawerOpen] = useState(false);\n  const [menuState, setMenuState] = useState(null);\n\n  // Use inverted logo if specified \n\t// and we are in dark mode\n  const logo = props.logoInverted && darkMode.value \n  \t\t\t\t\t\t\t? props.logoInverted \n  \t\t\t\t\t\t\t: props.logo;\n\n  const handleOpenMenu = (event, id) => {\n    // Store clicked element (to anchor the menu to)\n    // and the menu id so we can tell which menu is open.\n    setMenuState({ anchor: event.currentTarget, id });\n  };\n\n  const handleCloseMenu = () => {\n    setMenuState(null);\n  };\n",
+      "muiStyle": "{\n  logo: {\n    height: 28,\n    marginRight: theme.spacing(2),\n  },\n  drawerList: {\n    width: 250,\n  },\n  spacer: {\n    flexGrow: 1,\n  },\n}",
+      "children": [
+        {
+          "type": "instance",
+          "componentId": 9534547,
+          "id": 3869168,
+          "attributes": "{\n  bgColor: props.color,\n  size: \"auto\",\n}",
+          "children": [
+            {
+              "type": "instance",
+              "componentId": 6924602,
+              "id": 5097874,
+              "attributes": "{\n position: \"static\",\n color: \"transparent\",\n elevation: 0,\n}",
+              "children": [
+                {
+                  "type": "instance",
+                  "componentId": 6094171,
+                  "id": 4774206,
+                  "children": [
+                    {
+                      "type": "instance",
+                      "componentId": 5455913,
+                      "id": 2885076,
+                      "children": [
+                        {
+                          "type": "element",
+                          "tagName": "a",
+                          "attributes": "{\n  href: '/' \n}",
+                          "children": [
+                            {
+                              "type": "element",
+                              "tagName": "img",
+                              "attributes": "{\n  src: logo,\n  alt: \"Logo\",\n  className: classes.logo,\n}",
+                              "id": 9511764,
+                              "isVisible": true,
+                              "image": "",
+                              "name": "",
+                              "classNames": [],
+                              "classNameExpressions": [],
+                              "style": "",
+                              "children": []
+                            }
+                          ],
+                          "id": 5091826,
+                          "isVisible": true,
+                          "image": "",
+                          "name": "",
+                          "classNames": [],
+                          "classNameExpressions": [],
+                          "style": ""
+                        },
+                        {
+                          "type": "element",
+                          "tagName": "div",
+                          "id": 6099593,
+                          "attributes": "{\n\tclassName: classes.spacer,\n}",
+                          "name": "Spacer",
+                          "isVisible": true,
+                          "image": "",
+                          "classNames": [],
+                          "classNameExpressions": [],
+                          "style": "",
+                          "children": []
+                        },
+                        {
+                          "type": "instance",
+                          "componentId": 3614119,
+                          "id": 7694794,
+                          "attributes": "{\n\tmdUp: true,\n  implementation: \"css\",\n}",
+                          "children": [
+                            {
+                              "type": "instance",
+                              "componentId": 6001480,
+                              "id": 1747668,
+                              "children": [
+                                {
+                                  "type": "instance",
+                                  "componentId": 7903337,
+                                  "id": 2825001,
+                                  "subtype": "external-instance",
+                                  "isVisible": true,
+                                  "attributes": "{\n\n}",
+                                  "children": []
+                                }
+                              ],
+                              "attributes": "{\n\tonClick: () => {\n    setDrawerOpen(true);\n  },\n  color: \"inherit\",\n}",
+                              "subtype": "external-instance",
+                              "isVisible": true
+                            }
+                          ],
+                          "subtype": "external-instance",
+                          "isVisible": true
+                        },
+                        {
+                          "type": "instance",
+                          "componentId": 3614119,
+                          "id": 7277209,
+                          "attributes": "{\n\tsmDown: true,\n  implementation: \"css\",\n}",
+                          "children": [
+                            {
+                              "type": "instance",
+                              "componentId": 9259061,
+                              "id": 1754839,
+                              "attributes": "{\n color: \"inherit\",\n component: \"a\",\n href: \"/about\"\n}",
+                              "children": [
+                                {
+                                  "type": "text",
+                                  "text": "About",
+                                  "id": 357156,
+                                  "isVisible": true
+                                }
+                              ],
+                              "subtype": "external-instance",
+                              "isVisible": true
+                            },
+                            {
+                              "type": "instance",
+                              "componentId": 9259061,
+                              "id": 9784737,
+                              "attributes": "{\n color: \"inherit\",\n component: \"a\",\n href: \"/faq\"\n}",
+                              "children": [
+                                {
+                                  "type": "text",
+                                  "text": "Blog",
+                                  "id": 2444015,
+                                  "isVisible": true
+                                }
+                              ],
+                              "subtype": "external-instance",
+                              "isVisible": true
+                            },
+                            {
+                              "type": "instance",
+                              "componentId": 9259061,
+                              "id": 629802,
+                              "attributes": "{\n color: \"inherit\",\n component: \"a\",\n href: \"https://app.mysite.com/auth/signin\",\n}",
+                              "children": [
+                                {
+                                  "type": "text",
+                                  "text": "Sign in",
+                                  "id": 970559,
+                                  "isVisible": true
+                                }
+                              ],
+                              "subtype": "external-instance",
+                              "isVisible": true
+                            },
+                            {
+                              "type": "instance",
+                              "componentId": 2803465,
+                              "id": 4581363,
+                              "attributes": "{\n\tcomponent: \"span\",\n  ml: 1,\n}",
+                              "children": [
+                                {
+                                  "type": "instance",
+                                  "componentId": 9259061,
+                                  "id": 7686719,
+                                  "attributes": "{\n variant: \"contained\",\n color: \"primary\",\n component: \"a\",\n href: \"https://app.mysite.com/auth/signup\",\n}",
+                                  "children": [
+                                    {
+                                      "type": "text",
+                                      "text": "Sign up",
+                                      "id": 3234842,
+                                      "isVisible": true
+                                    }
+                                  ],
+                                  "subtype": "external-instance",
+                                  "isVisible": true
+                                }
+                              ],
+                              "subtype": "external-instance",
+                              "isVisible": true
+                            },
+                            {
+                              "type": "instance",
+                              "componentId": 6001480,
+                              "id": 2834587,
+                              "children": [
+                                {
+                                  "type": "if",
+                                  "js": "darkMode.value",
+                                  "id": 1277265,
+                                  "children": [
+                                    {
+                                      "type": "instance",
+                                      "componentId": 7218909,
+                                      "id": 2439973,
+                                      "subtype": "external-instance",
+                                      "isVisible": true,
+                                      "attributes": "{\n\n}",
+                                      "children": []
+                                    }
+                                  ],
+                                  "isVisible": true
+                                },
+                                {
+                                  "type": "if",
+                                  "js": "!darkMode.value",
+                                  "id": 8832072,
+                                  "children": [
+                                    {
+                                      "type": "instance",
+                                      "componentId": 5205416,
+                                      "id": 8266203,
+                                      "subtype": "external-instance",
+                                      "isVisible": true,
+                                      "attributes": "{\n\n}",
+                                      "children": []
+                                    }
+                                  ],
+                                  "isVisible": true
+                                }
+                              ],
+                              "attributes": "{\n  color: \"inherit\",\n\tonClick: darkMode.toggle,\n\tstyle: { opacity: 0.6 },\n}",
+                              "subtype": "external-instance",
+                              "isVisible": true
+                            }
+                          ],
+                          "subtype": "external-instance",
+                          "isVisible": true
+                        }
+                      ],
+                      "subtype": "external-instance",
+                      "isVisible": true,
+                      "attributes": "{\n\n}"
+                    }
+                  ],
+                  "attributes": "{\n\tdisableGutters: true,\n}",
+                  "subtype": "external-instance",
+                  "isVisible": true
+                }
+              ],
+              "subtype": "external-instance",
+              "isVisible": true
+            },
+            {
+              "type": "instance",
+              "componentId": 1225687,
+              "id": 3666418,
+              "attributes": "{\n anchor: \"right\",\n open: drawerOpen,\n onClose: () => setDrawerOpen(false)\n}",
+              "children": [
+                {
+                  "type": "instance",
+                  "componentId": 494811,
+                  "id": 9098006,
+                  "attributes": "{\n  className: classes.drawerList,\n  onClick: () => setDrawerOpen(false),\n}",
+                  "children": [
+                    {
+                      "type": "instance",
+                      "componentId": 174532,
+                      "id": 611858,
+                      "attributes": "{\n\tbutton: true,\n  component: \"a\",\n  href: \"/about\",\n}",
+                      "children": [
+                        {
+                          "type": "instance",
+                          "componentId": 6869634,
+                          "id": 103953,
+                          "children": [
+                            {
+                              "type": "text",
+                              "text": "About",
+                              "id": 5285250,
+                              "isVisible": true
+                            }
+                          ],
+                          "subtype": "external-instance",
+                          "isVisible": true,
+                          "attributes": "{\n\n}"
+                        }
+                      ],
+                      "subtype": "external-instance",
+                      "isVisible": true
+                    },
+                    {
+                      "type": "instance",
+                      "componentId": 174532,
+                      "id": 8520306,
+                      "attributes": "{\n\tbutton: true,\n  component: \"a\",\n  href: \"/faq\",\n}",
+                      "children": [
+                        {
+                          "type": "instance",
+                          "componentId": 6869634,
+                          "id": 3898700,
+                          "children": [
+                            {
+                              "type": "text",
+                              "text": "Pricing",
+                              "id": 4800228,
+                              "isVisible": true
+                            }
+                          ],
+                          "subtype": "external-instance",
+                          "isVisible": true,
+                          "attributes": "{\n\n}"
+                        }
+                      ],
+                      "subtype": "external-instance",
+                      "isVisible": true
+                    },
+                    {
+                      "type": "instance",
+                      "componentId": 174532,
+                      "id": 8681463,
+                      "attributes": "{\n\tbutton: true,\n  component: \"a\",\n  href: \"/about\",\n}",
+                      "children": [
+                        {
+                          "type": "instance",
+                          "componentId": 6869634,
+                          "id": 4290030,
+                          "children": [
+                            {
+                              "type": "text",
+                              "text": "Blog",
+                              "id": 7434395,
+                              "isVisible": true
+                            }
+                          ],
+                          "subtype": "external-instance",
+                          "isVisible": true,
+                          "attributes": "{\n\n}"
+                        }
+                      ],
+                      "subtype": "external-instance",
+                      "isVisible": true
+                    },
+                    {
+                      "type": "instance",
+                      "componentId": 174532,
+                      "id": 9884705,
+                      "attributes": "{\n\tbutton: true,\n  component: \"a\",\n href: \"https://app.mysite.com/auth/signin\",\n}",
+                      "children": [
+                        {
+                          "type": "instance",
+                          "componentId": 6869634,
+                          "id": 6445959,
+                          "children": [
+                            {
+                              "type": "text",
+                              "text": "Sign in",
+                              "id": 6511558,
+                              "isVisible": true
+                            }
+                          ],
+                          "subtype": "external-instance",
+                          "isVisible": true,
+                          "attributes": "{\n\n}"
+                        }
+                      ],
+                      "subtype": "external-instance",
+                      "isVisible": true
+                    },
+                    {
+                      "type": "instance",
+                      "componentId": 174532,
+                      "id": 6103266,
+                      "children": [
+                        {
+                          "type": "instance",
+                          "componentId": 9259061,
+                          "id": 7493754,
+                          "attributes": "{\n variant: \"contained\",\n color: \"primary\",\n component: \"a\",\n href: \"https://app.mysite.com/auth/signup\",\n}",
+                          "children": [
+                            {
+                              "type": "text",
+                              "text": "Sign up",
+                              "id": 3129227,
+                              "isVisible": true
+                            }
+                          ],
+                          "subtype": "external-instance",
+                          "isVisible": true
+                        }
+                      ],
+                      "subtype": "external-instance",
+                      "isVisible": true,
+                      "attributes": "{\n\n}"
+                    },
+                    {
+                      "type": "instance",
+                      "componentId": 174532,
+                      "id": 7804275,
+                      "children": [
+                        {
+                          "type": "instance",
+                          "componentId": 6001480,
+                          "id": 1890019,
+                          "children": [
+                            {
+                              "type": "if",
+                              "js": "darkMode.value",
+                              "id": 35930,
+                              "children": [
+                                {
+                                  "type": "instance",
+                                  "componentId": 7218909,
+                                  "id": 2787082,
+                                  "subtype": "external-instance",
+                                  "isVisible": true,
+                                  "attributes": "{\n\n}",
+                                  "children": []
+                                }
+                              ],
+                              "isVisible": true
+                            },
+                            {
+                              "type": "if",
+                              "js": "!darkMode.value",
+                              "id": 2546460,
+                              "children": [
+                                {
+                                  "type": "instance",
+                                  "componentId": 5205416,
+                                  "id": 3569491,
+                                  "subtype": "external-instance",
+                                  "isVisible": true,
+                                  "attributes": "{\n\n}",
+                                  "children": []
+                                }
+                              ],
+                              "isVisible": true
+                            }
+                          ],
+                          "attributes": "{\n  color: \"inherit\",\n\tonClick: darkMode.toggle,\n\tstyle: { opacity: 0.6 },\n}",
+                          "subtype": "external-instance",
+                          "isVisible": true
+                        }
+                      ],
+                      "subtype": "external-instance",
+                      "isVisible": true,
+                      "attributes": "{\n\n}"
+                    }
+                  ],
+                  "subtype": "external-instance",
+                  "isVisible": true
+                }
+              ],
+              "subtype": "external-instance",
+              "isVisible": true
+            }
+          ],
+          "isVisible": true
+        }
+      ],
+      "tags": [
+        "Navigation",
+        "Popular",
+        "not:saas"
+      ],
+      "description": "Navbar with row of links and sign up button",
+      "id": 9800430,
+      "isVisible": true,
+      "nameLibrary": ""
+    },
+    {
+      "type": "component",
+      "subtype": "page-component",
+      "path": "",
+      "children": [
+        {
+          "type": "instance",
+          "componentId": 9800430,
+          "id": 8851080,
+          "attributes": "{\n\t// Background\n  // default, light, primary, secondary,\n  // inherit, transparent\n  color: \"default\",\n  // Logo image url\n  logo: \"https://uploads.divjoy.com/logo.svg\",\n  // Logo image url for dark mode\n\tlogoInverted: \"https://uploads.divjoy.com/logo-white.svg\",\n}",
+          "isVisible": true,
+          "children": [],
+          "libraryName": "Navbar"
+        }
+      ],
+      "id": 282835,
+      "isVisible": true,
+      "code": "",
+      "description": "",
+      "requireAuth": false
+    },
+    {
+      "type": "component",
+      "subtype": "external-component",
+      "name": "Typography",
+      "module": {
+        "moduleName": "material-ui",
+        "modulePath": "@material-ui/core/Typography",
+        "default": "Typography"
+      },
+      "id": 4385644,
+      "isVisible": true,
+      "nameLibrary": "",
+      "description": "",
+      "tags": [],
+      "children": []
+    },
+    {
+      "type": "component",
+      "id": 857559,
+      "name": "SectionHeader",
+      "code": " \tconst { subtitle, title, size, className, ...otherProps } = props;\n\n  // Render nothing if no title or subtitle\n  if (!title && !subtitle) {\n    return null;\n  }\n",
+      "children": [
+        {
+          "type": "instance",
+          "componentId": 2803465,
+          "id": 6303082,
+          "attributes": "{\n\tcomponent: \"header\",\n  className: classes.root + \n    (props.className ? ` ${props.className}` : \"\"),\n  ...otherProps,\n}",
+          "children": [
+            {
+              "type": "if",
+              "js": "title",
+              "id": 9965525,
+              "children": [
+                {
+                  "type": "instance",
+                  "componentId": 4385644,
+                  "id": 5520767,
+                  "attributes": "{\n\tvariant: `h${size}`,\n  gutterBottom: props.subtitle ? true : false,\n}",
+                  "children": [
+                    {
+                      "type": "text",
+                      "text": "{title}",
+                      "id": 294205,
+                      "isVisible": true
+                    }
+                  ],
+                  "subtype": "external-instance",
+                  "isVisible": true
+                }
+              ],
+              "isVisible": true
+            },
+            {
+              "type": "if",
+              "js": "subtitle",
+              "id": 2244005,
+              "children": [
+                {
+                  "type": "instance",
+                  "componentId": 4385644,
+                  "id": 4169207,
+                  "attributes": "{\n\tvariant: \"subtitle1\",\n  className: classes.subtitle,\n}",
+                  "children": [
+                    {
+                      "type": "text",
+                      "text": "{subtitle}",
+                      "id": 2390922,
+                      "isVisible": true
+                    }
+                  ],
+                  "subtype": "external-instance",
+                  "isVisible": true
+                }
+              ],
+              "isVisible": true
+            }
+          ],
+          "subtype": "external-instance",
+          "isVisible": true
+        }
+      ],
+      "muiStyle": "{\n  root: {\n    // Add bottom margin if element below\n    \"&:not(:last-child)\": {\n      marginBottom: \"2rem\",\n    },\n  },\n  subtitle: {\n    // Subtitle text generally isn't very long\n    // so usually looks better to limit width.\n    maxWidth: 700,\n    // So we can have max-width but still\n    // have alignment controlled by text-align.\n    display: \"inline-block\",\n  },\n}",
+      "isVisible": true,
+      "nameLibrary": "",
+      "description": "",
+      "tags": []
+    },
+    {
+      "type": "component",
+      "name": "FaqSection",
+      "children": [
+        {
+          "type": "instance",
+          "componentId": 9534547,
+          "id": 2460188,
+          "attributes": "{\n\tbgColor: props.bgColor,\n  size: props.size,\n  bgImage: props.bgImage,\n  bgImageOpacity: props.bgImageOpacity,\n}",
+          "children": [
+            {
+              "type": "instance",
+              "componentId": 6094171,
+              "id": 5604616,
+              "children": [
+                {
+                  "type": "instance",
+                  "componentId": 857559,
+                  "id": 4251609,
+                  "attributes": "{\n\ttitle: props.title,\n  subtitle: props.subtitle,\n  size: 4,\n  textAlign: \"center\",\n}",
+                  "isVisible": true,
+                  "children": []
+                },
+                {
+                  "type": "foreach",
+                  "id": 3753004,
+                  "valName": "item",
+                  "objectName": "items",
+                  "indexName": "index",
+                  "children": [
+                    {
+                      "type": "instance",
+                      "componentId": 9647720,
+                      "id": 1255603,
+                      "children": [
+                        {
+                          "type": "instance",
+                          "componentId": 7981399,
+                          "id": 9608155,
+                          "attributes": "{\n\tclasses: { \n    root: classes.summary,\n    content: classes.summaryContent,\n  },\n  // MUI prefix will be removed on export\n  expandIcon: <MUI.ExpandMoreIcon />,\n  \"aria-controls\": `faq-panel-${index}`,\n}",
+                          "children": [
+                            {
+                              "type": "instance",
+                              "componentId": 4385644,
+                              "id": 1490856,
+                              "children": [
+                                {
+                                  "type": "text",
+                                  "text": "{item.question}",
+                                  "id": 3832428,
+                                  "isVisible": true
+                                }
+                              ],
+                              "attributes": "{\n\tvariant: \"h6\"\n}",
+                              "subtype": "external-instance",
+                              "isVisible": true
+                            }
+                          ],
+                          "subtype": "external-instance",
+                          "isVisible": true
+                        },
+                        {
+                          "type": "instance",
+                          "componentId": 7896305,
+                          "id": 917564,
+                          "attributes": "{\n\tid: `faq-panel-${index}`,\n}",
+                          "children": [
+                            {
+                              "type": "instance",
+                              "componentId": 4385644,
+                              "id": 7319502,
+                              "children": [
+                                {
+                                  "type": "text",
+                                  "text": "{item.answer}",
+                                  "id": 1608164,
+                                  "isVisible": true
+                                }
+                              ],
+                              "subtype": "external-instance",
+                              "isVisible": true,
+                              "attributes": "{\n\n}"
+                            }
+                          ],
+                          "subtype": "external-instance",
+                          "isVisible": true
+                        }
+                      ],
+                      "attributes": "{\n\tclasses: { \n    root: classes.accordion, \n    expanded: classes.expanded \n  },\n  key: index,\n}",
+                      "subtype": "external-instance",
+                      "isVisible": true
+                    }
+                  ],
+                  "isVisible": true,
+                  "objectType": "array"
+                }
+              ],
+              "attributes": "{\n\tmaxWidth: \"md\"\n}",
+              "subtype": "external-instance",
+              "isVisible": true
+            }
+          ],
+          "isVisible": true
+        }
+      ],
+      "muiStyle": "{\n  accordion: {\n    // Remove shadow\n    boxShadow: \"none\",\n    \"&:before\": {\n      // Remove default divider\n      display: \"none\",\n    },\n    // Add a custom border\n    \"&:not(:last-child)\": {\n      borderBottom: `1px solid ${theme.palette.divider}`,\n    },\n  },\n  expanded: {\n    margin: `0 !important`,\n  },\n  summary: {\n    minHeight: 78,\n  },\n  summaryContent: {\n    margin: \"0 !important\",\n  },\n}",
+      "code": "  const items = [\n    {\n      question: \"Integer ornare neque mauris?\",\n      answer:\n        \"Integer ornare neque mauris, ac vulputate lacus venenatis et. Pellentesque ut ultrices purus. Suspendisse ut tincidunt eros. In velit mi, rhoncus dictum neque a, tincidunt lobortis justo.\",\n    },\n    {\n      question: \"Lorem ipsum dolor sit amet?\",\n      answer:\n        \"Nunc nulla mauris, laoreet vel cursus lacinia, consectetur sit amet tellus. Suspendisse ut tincidunt eros. In velit mi, rhoncus dictum neque a, tincidunt lobortis justo.\",\n    },\n    {\n      question: \"Suspendisse ut tincidunt?\",\n      answer:\n        \"Lorem ipsum dolor sit amet, consectetur adipiscing elit. In lobortis, metus et mattis ullamcorper. Suspendisse ut tincidunt eros. In velit mi, rhoncus dictum neque a, tincidunt lobortis justo.\",\n    },\n    {\n      question: \"Ut enim ad minim veniam?\",\n      answer:\n        \"Suspendisse ut tincidunt eros. In velit mi, rhoncus dictum neque a, tincidunt lobortis justo.\",\n    },\n    {\n      question: \"In velit mi, rhoncus dictum neque?\",\n      answer:\n        \"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.\",\n    },\n  ];\n",
+      "id": 8401615,
+      "tags": [
+        "FAQ",
+        "Popular"
+      ],
+      "description": "FAQ with expandable items",
+      "isVisible": true,
+      "nameLibrary": ""
+    },
+    {
+      "type": "component",
+      "subtype": "external-component",
+      "name": "Accordion",
+      "module": {
+        "moduleName": "material-ui",
+        "modulePath": "@material-ui/core/Accordion",
+        "default": "Accordion"
+      },
+      "id": 9647720,
+      "isVisible": true,
+      "nameLibrary": "",
+      "description": "",
+      "tags": [],
+      "children": []
+    },
+    {
+      "type": "component",
+      "subtype": "external-component",
+      "name": "AccordionSummary",
+      "module": {
+        "moduleName": "material-ui",
+        "modulePath": "@material-ui/core/AccordionSummary",
+        "default": "AccordionSummary"
+      },
+      "id": 7981399,
+      "isVisible": true,
+      "nameLibrary": "",
+      "description": "",
+      "tags": [],
+      "children": []
+    },
+    {
+      "type": "component",
+      "subtype": "external-component",
+      "name": "AccordionDetails",
+      "module": {
+        "moduleName": "material-ui",
+        "modulePath": "@material-ui/core/AccordionDetails",
+        "default": "AccordionDetails"
+      },
+      "id": 7896305,
+      "isVisible": true,
+      "nameLibrary": "",
+      "description": "",
+      "tags": [],
+      "children": []
+    },
+    {
+      "type": "component",
+      "subtype": "external-component",
+      "name": "Link",
+      "module": {
+        "moduleName": "material-ui",
+        "modulePath": "@material-ui/core/Link",
+        "default": "LinkMui"
+      },
+      "id": 2366338,
+      "isVisible": true,
+      "nameLibrary": "",
+      "description": "",
+      "tags": [],
+      "children": []
+    },
+    {
+      "type": "component",
+      "name": "Footer",
+      "muiStyle": "{\n  sticky: {\n    marginTop: \"auto\",\n  },\n  wrapper: {\n    display: \"flex\",\n    flexWrap: \"wrap\",\n  },\n  item: {\n    display: \"flex\",\n    flex: \"none\",\n    justifyContent: \"center\",\n    width: \"100%\",\n    marginBottom: 24,\n    [theme.breakpoints.up(\"sm\")]: {\n      flex: \"50%\",\n    },\n  },\n  brand: {\n    display: \"block\",\n    height: 32,\n  },\n  social: {\n    alignItems: \"flex-end\",\n  },\n  link: {\n    color: \"inherit\",\n    lineHeight: 1,\n    \"&:not(:last-of-type)\": {\n      marginRight: \"1.2rem\"\n    },\n  },\n  left: {\n    [theme.breakpoints.up(\"sm\")]: {\n      justifyContent: \"flex-start\",\n    },\n  },\n  right: {\n    [theme.breakpoints.up(\"sm\")]: {\n      justifyContent: \"flex-end\",\n    },\n  },\n  // Move links to end (bottom right)\n  // Swaps position with social\n  smallLinks: {\n    [theme.breakpoints.up(\"sm\")]: {\n      order: 1,\n    },\n  },\n  legal: {\n    opacity: 0.6,\n    fontSize: \"0.875rem\",\n  \t'& a': {\n      color: \"inherit\",\n      marginLeft: \"0.8rem\",\n    },\n  },\n}",
+      "children": [
+        {
+          "type": "instance",
+          "componentId": 9534547,
+          "id": 6411810,
+          "attributes": "{\n\tbgColor: props.bgColor,\n  size: props.size,\n  bgImage: props.bgImage,\n  bgImageOpacity: props.bgImageOpacity,\n  className: props.sticky && classes.sticky,\n}",
+          "children": [
+            {
+              "type": "instance",
+              "componentId": 6094171,
+              "id": 2402308,
+              "children": [
+                {
+                  "type": "element",
+                  "tagName": "div",
+                  "id": 2078890,
+                  "attributes": "{\n\tclassName: classes.wrapper,\n}",
+                  "children": [
+                    {
+                      "type": "element",
+                      "tagName": "div",
+                      "id": 436180,
+                      "attributes": "{\n\tclassName: `${classes.item} ${classes.left}`,\n}",
+                      "children": [
+                        {
+                          "type": "element",
+                          "tagName": "a",
+                          "attributes": "{\n  href: \"/\", \n}",
+                          "children": [
+                            {
+                              "type": "element",
+                              "tagName": "img",
+                              "attributes": "{\n  src: logo,\n  alt: \"Logo\",\n  className: classes.brand,\n}",
+                              "id": 3764516,
+                              "isVisible": true,
+                              "image": "",
+                              "name": "",
+                              "classNames": [],
+                              "classNameExpressions": [],
+                              "style": "",
+                              "children": []
+                            }
+                          ],
+                          "id": 9298136,
+                          "isVisible": true,
+                          "image": "",
+                          "name": "",
+                          "classNames": [],
+                          "classNameExpressions": [],
+                          "style": ""
+                        }
+                      ],
+                      "isVisible": true,
+                      "image": "",
+                      "name": "",
+                      "classNames": [],
+                      "classNameExpressions": [],
+                      "style": ""
+                    },
+                    {
+                      "type": "element",
+                      "tagName": "div",
+                      "id": 9953474,
+                      "attributes": "{\n\tclassName: `${classes.item} ${classes.right} ${classes.smallLinks}`,\n}",
+                      "children": [
+                        {
+                          "type": "instance",
+                          "componentId": 4385644,
+                          "id": 8873914,
+                          "children": [
+                            {
+                              "type": "instance",
+                              "componentId": 2366338,
+                              "id": 6448157,
+                              "attributes": "{\n  href: \"/about\",\n  className: classes.link,\n}",
+                              "children": [
+                                {
+                                  "type": "text",
+                                  "text": "About",
+                                  "id": 6730882,
+                                  "isVisible": true
+                                }
+                              ],
+                              "subtype": "external-instance",
+                              "isVisible": true
+                            },
+                            {
+                              "type": "instance",
+                              "componentId": 2366338,
+                              "id": 6541012,
+                              "attributes": "{\n  href: \"/faq\",\n  className: classes.link,\n}",
+                              "children": [
+                                {
+                                  "type": "text",
+                                  "text": "FAQ",
+                                  "id": 4118832,
+                                  "isVisible": true
+                                }
+                              ],
+                              "subtype": "external-instance",
+                              "isVisible": true
+                            },
+                            {
+                              "type": "instance",
+                              "componentId": 2366338,
+                              "id": 3282303,
+                              "attributes": "{\n  href: \"/contact\",\n  className: classes.link,\n}",
+                              "children": [
+                                {
+                                  "type": "text",
+                                  "text": "Contact",
+                                  "id": 4981875,
+                                  "isVisible": true
+                                }
+                              ],
+                              "subtype": "external-instance",
+                              "isVisible": true
+                            },
+                            {
+                              "type": "instance",
+                              "componentId": 2366338,
+                              "id": 4357379,
+                              "attributes": "{\n  href: \"https://medium.com\",\n  target: \"_blank\",\n  rel: \"noreferrer\",\n  className: classes.link,\n}",
+                              "children": [
+                                {
+                                  "type": "text",
+                                  "text": "Blog",
+                                  "id": 677309,
+                                  "isVisible": true
+                                }
+                              ],
+                              "subtype": "external-instance",
+                              "isVisible": true
+                            }
+                          ],
+                          "subtype": "external-instance",
+                          "isVisible": true,
+                          "attributes": "{\n\n}"
+                        }
+                      ],
+                      "isVisible": true,
+                      "image": "",
+                      "name": "",
+                      "classNames": [],
+                      "classNameExpressions": [],
+                      "style": ""
+                    },
+                    {
+                      "type": "element",
+                      "tagName": "div",
+                      "id": 8777714,
+                      "attributes": "{\n\tclassName: `${classes.item} ${classes.right} ${classes.social}`,\n}",
+                      "children": [
+                        {
+                          "type": "element",
+                          "tagName": "a",
+                          "attributes": "{\n  href: \"https://twitter.com/divjoy\",\n  target: \"_blank\",\n  rel: \"noreferrer\",\n  className: classes.link,\n}",
+                          "children": [],
+                          "id": 7543937,
+                          "isVisible": true,
+                          "image": "",
+                          "name": "",
+                          "classNames": [],
+                          "classNameExpressions": [],
+                          "style": ""
+                        },
+                        {
+                          "type": "element",
+                          "tagName": "a",
+                          "attributes": "{\n  href: \"https://facebook.com/DivjoyOfficial\",\n  target: \"_blank\",\n  rel: \"noreferrer\",\n  className: classes.link,\n}",
+                          "children": [],
+                          "id": 5725053,
+                          "isVisible": true,
+                          "image": "",
+                          "name": "",
+                          "classNames": [],
+                          "classNameExpressions": [],
+                          "style": ""
+                        },
+                        {
+                          "type": "element",
+                          "tagName": "a",
+                          "attributes": "{\n  href: \"https://instagram.com\",\n  target: \"_blank\",\n  rel: \"noreferrer\",\n  className: classes.link,\n}",
+                          "children": [],
+                          "id": 7973708,
+                          "isVisible": true,
+                          "image": "",
+                          "name": "",
+                          "classNames": [],
+                          "classNameExpressions": [],
+                          "style": ""
+                        }
+                      ],
+                      "isVisible": true,
+                      "image": "",
+                      "name": "",
+                      "classNames": [],
+                      "classNameExpressions": [],
+                      "style": ""
+                    },
+                    {
+                      "type": "element",
+                      "tagName": "span",
+                      "id": 6946436,
+                      "attributes": "{\n  className: `${classes.item} ${classes.legal} ${classes.left}`,\n}",
+                      "children": [
+                        {
+                          "type": "text",
+                          "text": "{props.copyright}",
+                          "id": 1067227,
+                          "isVisible": true
+                        },
+                        {
+                          "type": "instance",
+                          "componentId": 2366338,
+                          "id": 3505939,
+                          "attributes": "{\n  href: \"/legal/terms-of-service\",\n}",
+                          "children": [
+                            {
+                              "type": "text",
+                              "text": "Terms",
+                              "id": 4168657,
+                              "isVisible": true
+                            }
+                          ],
+                          "subtype": "external-instance",
+                          "isVisible": true
+                        },
+                        {
+                          "type": "instance",
+                          "componentId": 2366338,
+                          "id": 5995479,
+                          "attributes": "{\n  href: \"/legal/privacy-policy\",\n}",
+                          "children": [],
+                          "subtype": "external-instance",
+                          "isVisible": true
+                        }
+                      ],
+                      "isVisible": true,
+                      "image": "",
+                      "name": "",
+                      "classNames": [],
+                      "classNameExpressions": [],
+                      "style": ""
+                    }
+                  ],
+                  "isVisible": true,
+                  "image": "",
+                  "name": "",
+                  "classNames": [],
+                  "classNameExpressions": [],
+                  "style": ""
+                }
+              ],
+              "subtype": "external-instance",
+              "isVisible": true,
+              "attributes": "{\n\n}"
+            }
+          ],
+          "isVisible": true
+        }
+      ],
+      "id": 5112763,
+      "tags": [
+        "Footer",
+        "Popular"
+      ],
+      "code": "\tconst darkMode = useDarkMode();\n  // Use inverted logo if specified \n\t// and we are in dark mode\n  const logo = props.logoInverted && darkMode.value \n  \t\t\t\t\t\t\t? props.logoInverted \n  \t\t\t\t\t\t\t: props.logo;\n",
+      "description": "Footer with row of links",
+      "isVisible": true,
+      "nameLibrary": ""
+    },
+    {
+      "type": "component",
+      "subtype": "external-component",
+      "name": "Grid",
+      "module": {
+        "moduleName": "material-ui",
+        "modulePath": "@material-ui/core/Grid",
+        "default": "Grid"
+      },
+      "id": 6105710,
+      "isVisible": true,
+      "nameLibrary": "",
+      "description": "",
+      "tags": [],
+      "children": []
+    },
+    {
+      "type": "component",
+      "id": 6573244,
+      "name": "HeroSection",
+      "children": [
+        {
+          "type": "instance",
+          "componentId": 9534547,
+          "id": 5230553,
+          "attributes": "{\n\tbgColor: props.bgColor,\n  size: props.size,\n  bgImage: props.bgImage,\n  bgImageOpacity: props.bgImageOpacity,\n}",
+          "children": [
+            {
+              "type": "instance",
+              "componentId": 6094171,
+              "id": 6621639,
+              "children": [
+                {
+                  "type": "instance",
+                  "componentId": 6105710,
+                  "id": 2492090,
+                  "attributes": "{\n\tcontainer: true,\n  alignItems: \"center\",\n  spacing: 6\n}",
+                  "children": [
+                    {
+                      "type": "instance",
+                      "componentId": 6105710,
+                      "id": 2715606,
+                      "attributes": "{\n\tcontainer: true,\n  item: true,\n  direction: \"column\",\n  xs: 12,\n  md: 6,\n}",
+                      "children": [
+                        {
+                          "type": "instance",
+                          "componentId": 2803465,
+                          "id": 2615149,
+                          "attributes": "{\n\ttextAlign: { xs: \"center\", md: \"left\" }\n}",
+                          "children": [
+                            {
+                              "type": "instance",
+                              "componentId": 857559,
+                              "id": 3583808,
+                              "attributes": "{\n\ttitle: props.title,\n  subtitle: props.subtitle,\n  size: 4\n}",
+                              "isVisible": true,
+                              "children": []
+                            },
+                            {
+                              "type": "instance",
+                              "componentId": 9259061,
+                              "id": 2230861,
+                              "attributes": "{\n variant: \"contained\",\n size: \"large\",\n color: props.buttonColor,\n href: props.buttonPath,\n}",
+                              "children": [
+                                {
+                                  "type": "text",
+                                  "text": "{props.buttonText}",
+                                  "id": 4881374,
+                                  "isVisible": true
+                                }
+                              ],
+                              "subtype": "external-instance",
+                              "isVisible": true
+                            }
+                          ],
+                          "subtype": "external-instance",
+                          "isVisible": true
+                        }
+                      ],
+                      "subtype": "external-instance",
+                      "isVisible": true
+                    },
+                    {
+                      "type": "instance",
+                      "componentId": 6105710,
+                      "id": 625636,
+                      "attributes": "{\n\titem: true,\n  xs: 12,\n  md: true,\n}",
+                      "children": [
+                        {
+                          "type": "element",
+                          "tagName": "figure",
+                          "id": 9736575,
+                          "children": [
+                            {
+                              "type": "element",
+                              "tagName": "img",
+                              "attributes": "{\n  src: props.image,\n  alt: \"illustration\",\n  className: classes.image,\n}",
+                              "id": 1979405,
+                              "isVisible": true,
+                              "image": "",
+                              "name": "",
+                              "classNames": [],
+                              "classNameExpressions": [],
+                              "style": "",
+                              "children": []
+                            }
+                          ],
+                          "isVisible": true,
+                          "attributes": "{\n\n}",
+                          "image": "",
+                          "name": "",
+                          "classNames": [],
+                          "classNameExpressions": [],
+                          "style": ""
+                        }
+                      ],
+                      "subtype": "external-instance",
+                      "isVisible": true
+                    }
+                  ],
+                  "subtype": "external-instance",
+                  "isVisible": true
+                }
+              ],
+              "subtype": "external-instance",
+              "attributes": "{\n\tclassName: classes.container,\n}",
+              "isVisible": true
+            }
+          ],
+          "isVisible": true
+        }
+      ],
+      "muiStyle": "{\n  // Increase <Container> padding so it's\n  // at least half of <Grid> spacing to \n  // avoid horizontal scroll on mobile.\n  // See https://material-ui.com/components/grid/#negative-margin\n  container: {\n    padding: `0 ${theme.spacing(3)}px`,\n  },\n  image: {\n    margin: \"0 auto\",\n    maxWidth: 570,\n    display: \"block\",\n    height: \"auto\",\n    width: \"100%\",\n  },\n}",
+      "tags": [
+        "Hero",
+        "Popular"
+      ],
+      "description": "Hero with image on right",
+      "isVisible": true,
+      "nameLibrary": "",
+      "code": ""
+    },
+    {
+      "type": "component",
+      "name": "FeaturesSection",
+      "id": 1695432,
+      "code": "  const items = [\n    {\n      title: \"Lorem Ipsum\",\n      body:\n        \"Integer ornare neque mauris, ac vulputate lacus venenatis et. Pellentesque ut ultrices purus.\",\n      image: \"https://uploads.divjoy.com/undraw-fish_bowl_uu88.svg\",\n    },\n    {\n      title: \"Lorem Ipsum\",\n      body:\n        \"Nunc nulla mauris, laoreet vel cursus lacinia, consectetur sit amet tellus.\",\n      image: \"https://uploads.divjoy.com/undraw-directions_x53j.svg\",\n    },\n    {\n      title: \"Lorem Ipsum\",\n      body:\n        \"Lorem ipsum dolor sit amet, consectetur adipiscing elit. In lobortis, metus et mattis ullamcorper\",\n      image: \"https://uploads.divjoy.com/undraw-stability_ball_b4ia.svg\",\n    },\n    {\n      title: \"Lorem Ipsum\",\n      body:\n        \"Suspendisse ut tincidunt eros. In velit mi, rhoncus dictum neque a, tincidunt lobortis justo\",\n      image: \"https://uploads.divjoy.com/undraw-personal_settings_kihd.svg\",\n    },\n  ];\n",
+      "muiStyle": "{\n  gridItem: {\n    // Add border that contrasts lightly with background color.\n    // We use boxShadow so that it's hidden around outer edge\n    // due to container <Card> having overflow: hidden\n    boxShadow: `1px 1px 0 0 ${emphasize(theme.palette.background.paper, 0.08)}`,\n    textAlign: \"center\",\n  },\n  imageContainer: {\n    margin: \"0 auto\",\n    maxWidth: \"200px\",\n    marginBottom: \"30px\",\n    \"& img\": {\n      width: \"100%\",\n    },\n  },\n}",
+      "children": [
+        {
+          "type": "instance",
+          "componentId": 9534547,
+          "id": 5299026,
+          "attributes": "{\n\tbgColor: props.bgColor,\n  size: props.size,\n  bgImage: props.bgImage,\n  bgImageOpacity: props.bgImageOpacity,\n}",
+          "children": [
+            {
+              "type": "instance",
+              "componentId": 6094171,
+              "id": 2242787,
+              "children": [
+                {
+                  "type": "instance",
+                  "componentId": 857559,
+                  "id": 8387515,
+                  "attributes": "{\n\ttitle: props.title,\n  subtitle: props.subtitle,\n  size: 4,\n  textAlign: \"center\",\n}",
+                  "isVisible": true,
+                  "children": []
+                },
+                {
+                  "type": "instance",
+                  "componentId": 1224284,
+                  "id": 8786633,
+                  "children": [
+                    {
+                      "type": "instance",
+                      "componentId": 6105710,
+                      "id": 5603463,
+                      "attributes": "{\n\tcontainer: true,\n}",
+                      "children": [
+                        {
+                          "type": "foreach",
+                          "id": 9408016,
+                          "valName": "item",
+                          "indexName": "index",
+                          "objectName": "items",
+                          "children": [
+                            {
+                              "type": "instance",
+                              "componentId": 6105710,
+                              "id": 8756828,
+                              "attributes": "{\n  item: true,\n  xs: 12,\n  md: 6,\n  className: classes.gridItem,\n  key: index,\n}",
+                              "children": [
+                                {
+                                  "type": "instance",
+                                  "componentId": 2803465,
+                                  "id": 5325674,
+                                  "attributes": "{\n\tp: 6,\n}",
+                                  "children": [
+                                    {
+                                      "type": "element",
+                                      "tagName": "div",
+                                      "id": 3293800,
+                                      "attributes": "{\n\tclassName: classes.imageContainer,\n}",
+                                      "children": [
+                                        {
+                                          "type": "instance",
+                                          "componentId": 8402912,
+                                          "id": 6668199,
+                                          "attributes": "{\n\tratio: 4 / 3,\n}",
+                                          "children": [
+                                            {
+                                              "type": "element",
+                                              "tagName": "img",
+                                              "attributes": "{\n  src: item.image,\n  alt: item.title,\n}",
+                                              "id": 3782393,
+                                              "isVisible": true,
+                                              "image": "",
+                                              "name": "",
+                                              "classNames": [],
+                                              "classNameExpressions": [],
+                                              "style": "",
+                                              "children": []
+                                            }
+                                          ],
+                                          "isVisible": true
+                                        }
+                                      ],
+                                      "isVisible": true,
+                                      "image": "",
+                                      "name": "",
+                                      "classNames": [],
+                                      "classNameExpressions": [],
+                                      "style": ""
+                                    },
+                                    {
+                                      "type": "instance",
+                                      "componentId": 4385644,
+                                      "id": 5590198,
+                                      "children": [
+                                        {
+                                          "type": "text",
+                                          "text": "{item.title}",
+                                          "id": 3020686,
+                                          "isVisible": true
+                                        }
+                                      ],
+                                      "attributes": "{\n\tvariant: \"h5\",\n  gutterBottom: true,\n}",
+                                      "subtype": "external-instance",
+                                      "isVisible": true
+                                    },
+                                    {
+                                      "type": "instance",
+                                      "componentId": 4385644,
+                                      "id": 8043516,
+                                      "children": [
+                                        {
+                                          "type": "text",
+                                          "text": "{item.body}",
+                                          "id": 1844615,
+                                          "isVisible": true
+                                        }
+                                      ],
+                                      "attributes": "{\n\tvariant: \"subtitle1\",\n}",
+                                      "subtype": "external-instance",
+                                      "isVisible": true
+                                    }
+                                  ],
+                                  "subtype": "external-instance",
+                                  "isVisible": true
+                                }
+                              ],
+                              "subtype": "external-instance",
+                              "isVisible": true
+                            }
+                          ],
+                          "isVisible": true,
+                          "objectType": "array"
+                        }
+                      ],
+                      "subtype": "external-instance",
+                      "isVisible": true
+                    }
+                  ],
+                  "attributes": "{\n\traised: false,\n}",
+                  "subtype": "external-instance",
+                  "isVisible": true
+                }
+              ],
+              "subtype": "external-instance",
+              "isVisible": true,
+              "attributes": "{\n\n}"
+            }
+          ],
+          "isVisible": true
+        }
+      ],
+      "tags": [
+        "Features",
+        "Popular"
+      ],
+      "description": "Features in two-column grid",
+      "isVisible": true,
+      "nameLibrary": ""
+    },
+    {
+      "type": "component",
+      "subtype": "external-component",
+      "name": "Card",
+      "module": {
+        "moduleName": "material-ui",
+        "modulePath": "@material-ui/core/Card",
+        "default": "Card"
+      },
+      "id": 1224284,
+      "isVisible": true,
+      "nameLibrary": "",
+      "description": "",
+      "tags": [],
+      "children": []
+    },
+    {
+      "type": "component",
+      "id": 8402912,
+      "name": "AspectRatio",
+      "muiStyle": "{\n  root: {\n    position: \"relative\",\n    width: \"100%\",\n    height: 0,\n  },\n  inner: {\n    // Fill parent aspect ratio\n    position: \"absolute\",\n    top: 0,\n    right: 0,\n    bottom: 0,\n    left: 0,\n    // Center contents\n    display: \"flex\",\n    alignItems: \"center\",\n    justifyContent: \"center\",\n    overflow: \"hidden\",\n  },\n}",
+      "children": [
+        {
+          "type": "element",
+          "tagName": "div",
+          "id": 8006128,
+          "attributes": "{\n\tclassName: classes.root,\n  style: {\n    paddingBottom: (1 / props.ratio) * 100 + \"%\",\n  },\n}",
+          "children": [
+            {
+              "type": "element",
+              "tagName": "div",
+              "id": 8614966,
+              "attributes": "{\n\tclassName: classes.inner,\n}",
+              "children": [
+                {
+                  "type": "children",
+                  "id": 3284199,
+                  "isVisible": true
+                }
+              ],
+              "isVisible": true,
+              "image": "",
+              "name": "",
+              "classNames": [],
+              "classNameExpressions": [],
+              "style": ""
+            }
+          ],
+          "isVisible": true,
+          "image": "",
+          "name": "",
+          "classNames": [],
+          "classNameExpressions": [],
+          "style": ""
+        }
+      ],
+      "isVisible": true,
+      "nameLibrary": "",
+      "description": "",
+      "tags": [],
+      "code": ""
+    }
+  ]
+}
