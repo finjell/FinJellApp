@@ -76,7 +76,7 @@ function Navbar(props) {
               <Button component={Link} to="/about" color="inherit">
                 About
               </Button>
-              <Button component={Link} to="/faq" color="inherit">
+              <Button component="a" href="https://blog.finjell.com" color="inherit">
                 Blog
               </Button>
               <Button
