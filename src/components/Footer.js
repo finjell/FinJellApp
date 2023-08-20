@@ -104,7 +104,7 @@ function Footer(props) {
                 Contact
               </LinkMui>
               <LinkMui
-                href="https://medium.com"
+                href="https://blog.finjell.com"
                 target="_blank"
                 rel="noreferrer"
                 className={classes.link}
