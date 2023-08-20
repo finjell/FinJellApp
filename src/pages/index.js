@@ -8,7 +8,7 @@ function IndexPage(props) {
       <Meta />
       <Navbar
         color="default"
-        logo="https://storage.googleapis.com/bucket-finjell-logo/FinJell-logos_transparent-250x250.png"
+        logo="https://storage.googleapis.com/bucket-finjell-logo/FinJell-logos_transparent.png"
         logoInverted="https://storage.cloud.google.com/bucket-finjell-logo/FinJell-logos_white.png"
       />
     </>
