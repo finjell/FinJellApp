@@ -35,7 +35,7 @@ function FeaturesSection(props) {
     {
       title: "Anonymous Profiles",
       body:
-        "Create and share your financial profile to learn from and help educate others depending on where you are on your financial journey",
+        "Create and share your financial profile to learn from and help educate others depending on where you are on your financial journey. We believe connecting with others - finding mentors - is perhaps one of the best ways to learn and become more money savvy",
       image: "https://uploads.divjoy.com/undraw-fish_bowl_uu88.svg"
     },
     {
