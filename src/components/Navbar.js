@@ -21,8 +21,8 @@ import { useDarkMode } from "./../util/theme";
 const useStyles = makeStyles((theme) => ({
   logo: {
     //height: 28,
-    height: 200,
-    width: 200,
+    height: 150,
+    width: 150,
     marginRight: theme.spacing(2),
   },
   drawerList: {
