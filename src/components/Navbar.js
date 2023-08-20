@@ -82,7 +82,7 @@ function Navbar(props) {
               <Button
                 color="inherit"
                 component="a"
-                href="https://app.mysite.com/auth/signin"
+                href="https://www.finjell.com/auth/signin"
               >
                 Sign in
               </Button>
@@ -91,7 +91,7 @@ function Navbar(props) {
                   variant="contained"
                   color="primary"
                   component="a"
-                  href="https://app.mysite.com/auth/signup"
+                  href="https://www.finjell.com/auth/signup"
                 >
                   Sign up
                 </Button>
@@ -130,7 +130,7 @@ function Navbar(props) {
           <ListItem
             button={true}
             component="a"
-            href="https://app.mysite.com/auth/signin"
+            href="https://www.finjell.com/auth/signin"
           >
             <ListItemText>Sign in</ListItemText>
           </ListItem>
@@ -139,7 +139,7 @@ function Navbar(props) {
               variant="contained"
               color="primary"
               component="a"
-              href="https://app.mysite.com/auth/signup"
+              href="https://www.finjell.com/auth/signup"
             >
               Sign up
             </Button>
