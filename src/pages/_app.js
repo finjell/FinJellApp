@@ -43,34 +43,6 @@ function App(props) {
             <Route component={NotFoundPage} />
           </Switch>
 
-          <HeroSection
-            bgColor="default"
-            size="medium"
-            bgImage=""
-            bgImageOpacity={1}
-            title="Enabling financial freedom for all"
-            subtitle="Our mission is to enable everyone to reach and manage financial independence in order to live more fulfilling lives"
-            image="https://uploads.divjoy.com/undraw-japan_ubgk.svg"
-            buttonText="Get Started"
-            buttonColor="primary"
-            buttonPath="/pricing"
-          />
-          <FeaturesSection
-            bgColor="default"
-            size="medium"
-            bgImage=""
-            bgImageOpacity={1}
-            title="Features"
-            subtitle="Our product is a work in development but we plan to build the following "
-          />
-          <FaqSection
-            bgColor="default"
-            size="medium"
-            bgImage=""
-            bgImageOpacity={1}
-            title="Frequently Asked Questions"
-            subtitle=""
-          />
           <Footer
             bgColor="default"
             size="medium"
