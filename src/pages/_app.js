@@ -1,5 +1,11 @@
 import React from "react";
 import IndexPage from "./index";
+import Navbar from "./../components/Navbar";
+import AboutPage from "./about";
+import FaqPage from "./faq";
+import ContactPage from "./contact";
+import PricingPage from "./pricing";
+import LegalPage from "./legal";
 import { Switch, Route, Router } from "./../util/router";
 import NotFoundPage from "./404";
 import HeroSection from "./../components/HeroSection";
