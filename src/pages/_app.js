@@ -17,6 +17,16 @@ function App(props) {
           <Switch>
             <Route exact path="/" component={IndexPage} />
 
+            <Route exact path="/about" component={AboutPage} />
+
+            <Route exact path="/faq" component={FaqPage} />
+
+            <Route exact path="/contact" component={ContactPage} />
+
+            //<Route exact path="/pricing" component={PricingPage} />
+
+            <Route exact path="/legal/:section" component={LegalPage} />
+
             <Route component={NotFoundPage} />
           </Switch>
 
