@@ -32,21 +32,21 @@ function TeamBiosSection(props) {
   const items = [
     {
       //avatar: "https://uploads.divjoy.com/pravatar-150x-68.jpeg",
-      avatar: "https://storage.googleapis.com/bucket-finjell-logo/eddy-avatar.jpeg"
+      avatar: "https://storage.googleapis.com/bucket-finjell-logo/eddy-avatar.jpeg",
       name: "Eddy",
       role: "Co-founder",
-      bio: "Eddy has worked in product at various tech companies. He has a vested interest in personal finance and believes it's a noble mission to enable everyone to reach financial independence, himself included!",
+      bio: "Eddy has worked in product at various tech companies. He believes it's a noble and worthy mission to pour his energy into enabling everyone to reach financial independence, himself included!",
     },
     {
       //avatar: "https://uploads.divjoy.com/pravatar-150x-35.jpeg",
-      avatar: "https://storage.googleapis.com/bucket-finjell-logo/man-software-eng.jpg"
+      avatar: "https://storage.googleapis.com/bucket-finjell-logo/man-software-eng.jpg",
       name: "TBD",
       role: "Software Engineer",
       bio: "Could this be you?",
     },
     {
       //avatar: "https://uploads.divjoy.com/pravatar-150x-16.jpeg",
-      avatar: "https://storage.googleapis.com/bucket-finjell-logo/female-machinelearning-eng.jpg"
+      avatar: "https://storage.googleapis.com/bucket-finjell-logo/female-machinelearning-eng.jpg",
       name: "TBD",
       role: "Machine Learning Engineer",
       bio: "Could this be you?",
