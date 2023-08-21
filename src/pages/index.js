@@ -15,7 +15,8 @@ function IndexPage(props) {
             bgImageOpacity={1}
             title="Enabling financial freedom for all"
             subtitle="Our mission is to enable everyone to reach and manage financial independence in order to live more fulfilling lives"
-            image="https://uploads.divjoy.com/undraw-japan_ubgk.svg"
+            image="https://storage.googleapis.com/bucket-finjell-logo/header-image-manwithmoney.jpg"
+            //image="https://uploads.divjoy.com/undraw-japan_ubgk.svg"
             buttonText="Get Started"
             buttonColor="primary"
             buttonPath="/pricing"
