@@ -36,25 +36,29 @@ function FeaturesSection(props) {
       title: "Anonymous Profiles",
       body:
         "Create and share your financial profile to learn from and help educate others depending on where you are on your financial journey. We believe connecting with others - finding mentors - is perhaps one of the best ways to learn and become more money savvy",
-      image: "https://uploads.divjoy.com/undraw-fish_bowl_uu88.svg"
+      image: "https://storage.googleapis.com/bucket-finjell-logo/anonymous-profiles.jpg"
+      //image: "https://uploads.divjoy.com/undraw-fish_bowl_uu88.svg"
     },
     {
       title: "Spreadsheet Sharing",
       body:
         "Let's face it - no matter how many software tools exist out there, many of us still use spreadsheets to manage our financial life. We want to enable the single, best place to store the best personal finance spreadsheets on the Internet",
-      image: "https://uploads.divjoy.com/undraw-directions_x53j.svg"
+      image: "https://storage.googleapis.com/bucket-finjell-logo/spreadsheet-woman.jpg"
+      //image: "https://uploads.divjoy.com/undraw-directions_x53j.svg"
     },
     {
       title: "Financial Wiki",
       body:
         "We're starting a baseline wiki but we want the wisdom of the crowds to build upon this so that we can together create the single best repository of personal finance knowledge that helps everyone from the most basic questions to the most advanced and obscure",
-      image: "https://uploads.divjoy.com/undraw-stability_ball_b4ia.svg"
+      image: "https://storage.googleapis.com/bucket-finjell-logo/students-financial-wiki.jpg"
+      //image: "https://uploads.divjoy.com/undraw-stability_ball_b4ia.svg"
     },
     {
       title: "Intelligent Money Assistant",
       body:
         "We have grand ambitions given the amazing advancements in generative AI. There will be 3 phases to fulfilling our vision here: (1) financial tracker (2) decision making scenario analysis (3) AI assistant",
-      image: "https://uploads.divjoy.com/undraw-personal_settings_kihd.svg"
+      image: "https://storage.googleapis.com/bucket-finjell-logo/intelligent-money-assistant.jpg"
+      //image: "https://uploads.divjoy.com/undraw-personal_settings_kihd.svg"
     }
   ];
 
