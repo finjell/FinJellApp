@@ -20,6 +20,13 @@ function App(props) {
     <ThemeProvider>
       <Router>
         <>
+
+          <Navbar
+            color="default"
+            logo="https://storage.googleapis.com/bucket-finjell-logo/FinJell-logos_transparent.png"
+            logoInverted="https://storage.cloud.google.com/bucket-finjell-logo/FinJell-logos_white.png"
+          />
+    
           <Switch>
             <Route exact path="/" component={IndexPage} />
 
