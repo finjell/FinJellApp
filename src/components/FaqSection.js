@@ -38,7 +38,7 @@ function FaqSection(props) {
 
   const items = [
     {
-      question: "Who are you and why are you buliding this?",
+      question: "Who are you and why are you building this?",
       answer:
         "We are folks in tech who started FinJell to help make sense of money on our path to financial independence (FI). We think people reach FI via many different, varied paths which is amazing. But unfortunately, we think most of the time it is achieved without enough planning or intention. We also believe many people sadly don't reach a stable FI state and we want to change this"
     },
